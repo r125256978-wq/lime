@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暖暖窩 | 小型犬毛孩的溫馨小窩</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome 圖示 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        milk: {
+                            50: '#FAF7F2',
+                            100: '#F5EFE6',
+                            200: '#E8DFD1',
+                            300: '#D9C8B4',
+                            400: '#C2A88F',
+                            500: '#AA886B',
+                            600: '#8C694E',
+                            700: '#6E4E37',
+                            800: '#523826',
+                            900: '#382317',
+                        },
+                        warmWarm: {
+                            accent: '#E07A5F',
+                            soft: '#F2CC8F',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #FAF7F2;
+            color: #523826;
+        }
+    </style>
+</head>
+<body class="bg-milk-50 text-milk-800 flex flex-col min-h-screen">
+
+    <!-- 頂部導航欄 -->
+    <header class="sticky top-0 z-50 bg-milk-100/90 backdrop-blur-md shadow-sm border-b border-milk-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-milk-500 text-white flex items-center justify-center text-xl shadow">
+                    <i class="fa-solid font-paw">🐾</i>
+                </div>
+                <span class="text-2xl font-bold tracking-wide text-milk-800">暖暖窩</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 font-medium text-milk-700">
+                <a href="#about" class="hover:text-milk-500 transition-colors">關於暖暖窩</a>
+                <a href="#services" class="hover:text-milk-500 transition-colors">專屬服務</a>
+                <a href="#reviews" class="hover:text-milk-500 transition-colors">家長好評</a>
+                <a href="#contact" class="hover:text-milk-500 transition-colors">預約聊天</a>
+            </nav>
+            <a href="#contact" class="bg-milk-500 hover:bg-milk-600 text-white px-4 py-2 rounded-full font-medium transition-all shadow hover:shadow-md text-sm sm:text-base">
+                <i class="fa-regular fa-calendar-check mr-1"></i> 預約狗狗時段
+            </a>
+        </div>
+    </header>
+
+    <!-- 主視覺 Banner -->
+    <section class="relative bg-gradient-to-b from-milk-100 to-milk-50 py-12 md:py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <span class="inline-block bg-milk-200 text-milk-700 px-4 py-1.5 rounded-full text-sm font-medium tracking-wide">
+                🐶 上班族家長的安心避風港
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-bold text-milk-900 leading-tight">
+                辛苦上班的每一天，<br>把最心愛的毛寶貝交給<span class="text-milk-500">暖暖窩</span>吧！
+            </h1>
+            <p class="text-lg sm:text-xl text-milk-700 max-w-2xl mx-auto leading-relaxed">
+                嗨～歡迎來到暖暖窩！我們知道每天忙著上班的你，最心疼的就是讓家中寶貝獨自留在家。在這裡，我們像對待自己的孩子一樣，用最細心的態度陪伴每一個小毛球。
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#services" class="bg-milk-500 hover:bg-milk-600 text-white px-8 py-3 rounded-full font-medium text-lg transition-all shadow-md">
+                    了解日常陪伴與洗護
+                </a>
+                <a href="#contact" class="bg-white hover:bg-milk-100 text-milk-700 border border-milk-300 px-8 py-3 rounded-full font-medium text-lg transition-all">
+                    加 Line 聊聊狗狗狀況
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 為什麼選擇暖暖窩 / 特色 -->
+    <section id="about" class="py-12 md:py-16 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-milk-800">為什麼小型犬家長都喜歡來暖暖窩？</h2>
+            <p class="text-milk-600 mt-2">溫暖、安心、就像第二個家！</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- 特色 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-milk-200 text-center hover:shadow-md transition-shadow">
+                <div class="w-14 h-14 bg-milk-100 text-milk-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-house-chimney-heart"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-milk-800">專為小型犬打造</h3>
+                <p class="text-milk-600 text-sm leading-relaxed">
+                    環境單純無大狗壓力！適合貴賓、瑪爾濟斯、吉娃娃、博美等嬌小寶貝，讓牠們自在跑跳無負擔。
+                </p>
+            </div>
+
+            <!-- 特色 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-milk-200 text-center hover:shadow-md transition-shadow">
+                <div class="w-14 h-14 bg-milk-100 text-milk-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-camera-retro"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-milk-800">即時回報，上班超安心</h3>
+                <p class="text-milk-600 text-sm leading-relaxed">
+                    知道你在辦公室掛念牠！我們會隨時發送照片、影片與用餐情況，讓你上班隨時能獲得療癒能量。
+                </p>
+            </div>
+
+            <!-- 特色 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-milk-200 text-center hover:shadow-md transition-shadow">
+                <div class="w-14 h-14 bg-milk-100 text-milk-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-milk-800">溫柔慢步調洗護</h3>
+                <p class="text-milk-600 text-sm leading-relaxed">
+                    不洗快的，只洗放鬆的。全程一對一溫柔對待，使用低敏洗劑與暖色調環境，減緩寶貝洗澡的緊張感。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服務項目 -->
+    <section id="services" class="py-12 md:py-16 bg-milk-100/60 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-milk-800">暖暖窩的專屬服務</h2>
+                <p class="text-milk-600 mt-2">給寶貝無微不至的貼心照顧</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 服務 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-milk-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-milk-800">日托陪伴 (上班族專案)</h3>
+                            <span class="bg-milk-100 text-milk-600 px-3 py-1 rounded-full text-xs font-semibold">最受歡迎</span>
+                        </div>
+                        <p class="text-milk-600 mb-6 leading-relaxed">
+                            早上上班前送過來，晚上下班再帶熱情迎接你的小寶貝回家！包含基礎社交、自由活動時間、散步與午睡時段。
+                        </p>
+                        <ul class="space-y-2 text-milk-700 text-sm mb-6">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-milk-500 mr-2"></i> 專屬休憩軟墊與獨立休息區</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-milk-500 mr-2"></i> 每天定時回報動態照片/影片</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-milk-500 mr-2"></i> 可彈性配合彈性上下班時間預約</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('日托陪伴')" class="w-full bg-milk-200 hover:bg-milk-300 text-milk-800 font-medium py-2.5 rounded-xl transition-colors">
+                        想了解日托細節
+                    </button>
+                </div>
+
+                <!-- 服務 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-milk-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-milk-800">小型犬精緻洗護</h3>
+                            <span class="bg-milk-100 text-milk-600 px-3 py-1 rounded-full text-xs font-semibold">放鬆 Spa</span>
+                        </div>
+                        <p class="text-milk-600 mb-6 leading-relaxed">
+                            專為小型犬敏感肌膚設計的天然洗護流程。包含耳朵清潔、剪指甲、擠肛門腺、腳底毛修剪與全身SPA吹梳。
+                        </p>
+                        <ul class="space-y-2 text-milk-700 text-sm mb-6">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-milk-500 mr-2"></i> 使用草本有機低敏洗髮精</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-milk-500 mr-2"></i> 不強迫、不烘箱，純手工手吹</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-milk-500 mr-2"></i> 附贈香香可愛小飾品/領巾</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('精緻洗護')" class="w-full bg-milk-200 hover:bg-milk-300 text-milk-800 font-medium py-2.5 rounded-xl transition-colors">
+                        預約洗澡時間
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 熟客家長分享 -->
+    <section id="reviews" class="py-12 md:py-16 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-milk-800">熟客家長的心聲</h2>
+            <p class="text-milk-600 mt-2">謝謝你們把寶貝安心交給暖暖窩❤️</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- 心聲 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-milk-200 relative">
+                <div class="text-warmWarm-soft text-4xl font-serif absolute top-4 right-4">“</div>
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 rounded-full bg-milk-300 flex items-center justify-center font-bold text-milk-700">
+                        圓圓
+                    </div>
+                    <div>
+                        <div class="font-bold text-milk-800">圓圓媽 (行銷專員)</div>
+                        <div class="text-xs text-milk-500">家有 2 歲奶油紅貴賓</div>
+                    </div>
+                </div>
+                <p class="text-milk-700 text-sm leading-relaxed">
+                    「因為平常要到公司上班，很擔心圓圓一個人在家會焦慮。送來暖暖窩後，收到照片看到牠跟其他小狗玩得好開心，我就能安心專心工作了！下班接牠回家時都滿足地打瞌睡～」
+                </p>
+            </div>
+
+            <!-- 心聲 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-milk-200 relative">
+                <div class="text-warmWarm-soft text-4xl font-serif absolute top-4 right-4">“</div>
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-10 h-10 rounded-full bg-milk-300 flex items-center justify-center font-bold text-milk-700">
+                        Momo
+                    </div>
+                    <div>
+                        <div class="font-bold text-milk-800">Momo 爸 (工程師)</div>
+                        <div class="text-xs text-milk-500">家有 4 歲博美犬</div>
+                    </div>
+                </div>
+                <p class="text-milk-700 text-sm leading-relaxed">
+                    「Momo 以前去別家美容都很緊張，但暖暖窩的環境很安靜溫馨，工作人員超有耐性。現在洗完澡毛摸起來超軟超香，回家也不會一直發抖了，真的很感動！」
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 / 聯絡資訊 -->
+    <footer id="contact" class="bg-milk-800 text-milk-100 mt-auto pt-12 pb-6 px-4">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-milk-700 text-sm">
+            <div>
+                <h4 class="text-lg font-bold text-white mb-3">暖暖窩毛孩工作室</h4>
+                <p class="text-milk-300 leading-relaxed">
+                    專為上班族與小型犬打造的溫馨小窩。<br>
+                    讓我們用陪伴與細心，給毛寶貝最溫暖的照顧。
+                </p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold text-white mb-3">來找我們聊聊</h4>
+                <ul class="space-y-2 text-milk-300">
+                    <li><i class="fa-solid fa-clock w-5"></i> 營業時間：週一至週五 08:00 - 19:30</li>
+                    <li><i class="fa-solid fa-location-dot w-5"></i> 地址：台北市溫馨路 88 號 1 樓</li>
+                    <li><i class="fa-solid fa-phone w-5"></i> 電話：(02) 2345-6789</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold text-white mb-3">線上預約 / 諮詢</h4>
+                <p class="text-milk-300 mb-3">第一次來嗎？隨時加 LINE 預約參觀或了解細節喔！</p>
+                <button onclick="alertMessage()" class="bg-milk-500 hover:bg-milk-600 text-white px-5 py-2.5 rounded-full font-medium transition-all shadow inline-flex items-center">
+                    <i class="fa-brands fa-line text-lg mr-2"></i> 加 LINE 預約相談
+                </button>
+            </div>
+        </div>
+
+        <!-- 最底部的署名 -->
+        <div class="max-w-5xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-milk-400">
+            <p>© 2026 暖暖窩毛孩工作室. All rights reserved.</p>
+            <p class="mt-2 sm:mt-0 font-medium text-milk-300">製作：你的名字</p>
+        </div>
+    </footer>
+
+    <!-- 簡單互動彈窗 -->
+    <div id="modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-milk-50 rounded-2xl max-w-md w-full p-6 shadow-xl border border-milk-200 space-y-4">
+            <h3 id="modal-title" class="text-xl font-bold text-milk-800">預約諮詢</h3>
+            <p class="text-milk-600 text-sm">
+                歡迎隨時帶寶貝來「暖暖窩」散散步、熟悉環境！請留下您的聯絡方式，我們會盡快與您聯繫。
+            </p>
+            <input type="text" placeholder="您的稱呼 (例：圓圓媽)" class="w-full px-4 py-2 rounded-xl border border-milk-300 focus:outline-none focus:ring-2 focus:ring-milk-400 text-sm">
+            <input type="text" placeholder="狗狗的名字與品種" class="w-full px-4 py-2 rounded-xl border border-milk-300 focus:outline-none focus:ring-2 focus:ring-milk-400 text-sm">
+            <div class="flex justify-end space-x-3 pt-2">
+                <button onclick="closeModal()" class="px-4 py-2 rounded-xl border border-milk-300 text-milk-700 text-sm hover:bg-milk-100">取消</button>
+                <button onclick="submitModal()" class="px-4 py-2 rounded-xl bg-milk-500 text-white text-sm hover:bg-milk-600">送出預約</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(serviceName) {
+            document.getElementById('modal-title').innerText = '預約 - ' + serviceName;
+            document.getElementById('modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+        }
+
+        function submitModal() {
+            alert('感謝您的預約！暖暖窩會盡快跟您聯繫喔 ❤️');
+            closeModal();
+        }
+
+        function alertMessage() {
+            alert('歡迎加 LINE 好友：@warm_nest，隨時跟我們聊聊天喔！');
+        }
+    </script>
+</body>
+</html>
